@@ -34,7 +34,7 @@ sed -i 's/CLUSTER_DOMAIN/'$CLUSTER_DOMAIN'/g' gitlab.yaml
      Go to Openshift WebConsole --> Administrator --> Operators --> Operator Hub --> Search for GitLab --> Click on it, and Install. 
 
 
-4. Once the Operator Installed Successfully , you can check the status with the following command, you need to see PHASE= Succeeded:
+4. Wait for the Operator Installation to finish Successfully , you can check the status with the following command, you need to see PHASE= Succeeded:
 ```shell
 oc get csv -n gitlab-system | grep -E 'NAME|gitlab'
 ```
