@@ -37,7 +37,10 @@ sed -i 's/CLUSTER_DOMAIN/'$CLUSTER_DOMAIN'/g' gitlab.yaml
 4. Wait for the Operator Installation to finish Successfully , you can check the status with the following command, you need to see PHASE= Succeeded:
 ```shell
 oc get csv -n gitlab-system | grep -E 'NAME|gitlab'
+# If want to wait until it reach to PHASE = Scceeded without re-enter the command over and over, kindly type, and in the end press CTRL+Z/ CTRL+C
+watch "oc get csv -n gitlab-system | grep -E 'NAME|gitlab'"
 ```
+
 
 5. Now you can create a gitHub Instance using the operator and GitLab CustomResource:
 ```shell
