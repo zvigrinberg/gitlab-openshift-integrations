@@ -11,6 +11,8 @@
    2. Trigger a build of a BuildConfig using BuildConfig Gitlab WebHook Invoked by GitLab upon push event to a sample repository with sample application.
    3. Trigger an Openshift Pipeline From a sample repository with sample application in GitLab(Using HTTP callback/WebHooks in GitLab triggered by push event to repo).
        Define a Openshift (Tekton) Pipelines EventListener, TriggerBinding , And TriggerTemplate, and attach it to some ref Pipeline.
+   4. Try to Trigger gitLab Job to deploy application Using webhook invoked from a CI Tekton Pipeline.
+   5. Configuring a GitLab identity provider in Openshift.
 
 ### Installing the operator
 
