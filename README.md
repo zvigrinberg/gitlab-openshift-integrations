@@ -12,7 +12,7 @@
    3. Trigger an Openshift Pipeline From a sample repository with sample application in GitLab(Using HTTP callback/WebHooks in GitLab triggered by push event to repo).
        Define a Openshift (Tekton) Pipelines EventListener, TriggerBinding , And TriggerTemplate, and attach it to some ref Pipeline.
    4. Try to Trigger gitLab Job to deploy application Using webhook invoked from a CI Tekton Pipeline.
-   5. Configuring a GitLab identity provider in Openshift.
+   5. Configuring a GitLab identity provider in Openshift, using the gitlab Instance installed on openshift as the Identity provider.
 
 ### Installing the operator
 
