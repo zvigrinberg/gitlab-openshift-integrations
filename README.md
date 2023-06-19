@@ -13,6 +13,7 @@
        Define a Openshift (Tekton) Pipelines EventListener, TriggerBinding , And TriggerTemplate, and attach it to some ref Pipeline.
    4. Try to Trigger gitLab Job to deploy application Using webhook invoked from a CI Tekton Pipeline.
    5. Configuring a GitLab identity provider in Openshift, using the gitlab Instance installed on openshift as the Identity provider.
+   6. Configure A Gitops CD pipeline using RH Openshift GitOps (ArgoCD) to sync the cluster state with a GitLab Repository containing Helm Chart/Ocp Resources.
 
 ### Installing the operator
 
